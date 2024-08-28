@@ -1,0 +1,22 @@
+.square{
+    -fx-border-style: solid;
+    -fx-background-color: "#a3b18a";
+}
+
+.square:hover {
+    -fx-background-color: yellow;
+}
+
+.square.selected {
+    -fx-border-width: 5;
+    -fx-background-color: "#a2d2ff";
+    -fx-border-color: slategray;
+}
+
+.square.allowed{
+    -fx-background-color: "#bde0fe";
+}
+
+.square.unsafe{
+    -fx-background-color: "#ff4f4f";
+}

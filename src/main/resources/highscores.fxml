@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #dad7cd;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HighScoreController">
+    <top>
+        <AnchorPane prefHeight="112.0" prefWidth="600.0" style="-fx-background-color: #800000;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="80.0" fitWidth="94.0" layoutX="29.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/queen.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="140.0" layoutY="16.0" prefHeight="85.0" prefWidth="451.0" style="-fx-alignment: Center;" text="HIGH SCORES" textFill="WHITE">
+                    <font>
+                        <Font name="Verdana Bold Italic" size="36.0" />
+                    </font>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane prefHeight="71.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="Exit" layoutX="213.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="44.0" prefWidth="184.0" style="-fx-background-color: #800000;" text="Exit" textFill="WHITE">
+                    <font>
+                        <Font name="Bodoni MT Black Italic" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </bottom>
+    <center>
+        <AnchorPane prefHeight="367.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="Table" layoutX="60.0" layoutY="14.0" prefHeight="355.0" prefWidth="479.0">
+                    <columns>
+                        <TableColumn fx:id="playerNameColumn" prefWidth="242.99997329711914" text="Player Name" />
+                        <TableColumn fx:id="winsColumn" prefWidth="235.66668701171875" text="Wins" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
